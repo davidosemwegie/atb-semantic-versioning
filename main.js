@@ -1,3 +1,10 @@
+/**
+ * @function validateNumber() - will validate that the number is greater than 0 and has no leading zeros
+ * @param {string} x - Part of the semver number
+ *
+ * @returns {integer}
+ */
+
 const validateNumber = (x) => {
     //Check if number has leading 0
     const _x = x.split("")
@@ -11,6 +18,13 @@ const validateNumber = (x) => {
 
     return parseInt(x)
 }
+
+/**
+ * @function processInput() - will convert the string semver number into an array of integer
+ * @param {string} x - Semver number
+ *
+ * @returns {array}
+ */
 
 const processInput = (x) => {
     const _x = x.split(".").map(value => validateNumber(value))
