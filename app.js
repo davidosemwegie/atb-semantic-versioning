@@ -47,7 +47,7 @@ inquirer
         console.log(message)
     })
     .catch(error => {
-        console.log(error)
-        console.log("Please restart the program")
+        console.log(chalk.red.bold(error))
+        console.log(chalk.blue.bold("Please restart the program"))
     });
 
