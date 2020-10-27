@@ -8,8 +8,11 @@
 const inquirer = require('inquirer');
 const chalk = require('chalk');
 
-
+/**
+ * The determinePrecedence is located at ./src/determinePrecedence
+ */
 const { determinePrecedence } = require('./src/determinePrecedence')
+
 inquirer
     .prompt([
         {
