@@ -1,6 +1,11 @@
+/**
+ * Author: David Osemwegie
+ * Date: October 26th 2020
+ */
+
+
 //Imports
 const { validateNumber } = require('./validateNumber')
-
 
 /**
  * @function processInput() - will convert the string semver number into an array of integer

@@ -1,4 +1,12 @@
+/**
+ * Author: David Osemwegie
+ * Date: October 26th 2020
+ */
+
+
+//Imports
 const inquirer = require('inquirer');
+const chalk = require('chalk');
 
 
 const { determinePrecedence } = require('./src/determinePrecedence')
@@ -24,10 +32,10 @@ inquirer
 
         switch (res) {
             case 1:
-                message = `${first_number} takes precedent over ${second_number}.`
+                message = `${first_number} takes precedent over ${second_number}`
                 break
             case 0:
-                message = `${second_number} takes precedent over ${first_number}.`
+                message = `${second_number} takes precedent over ${first_number}`
                 break
             case -1:
                 message = `Both numbers are the same. There is no precedent.`
@@ -39,10 +47,7 @@ inquirer
         console.log(message)
     })
     .catch(error => {
-        if (error.isTtyError) {
-            // Prompt couldn't be rendered in the current environment
-        } else {
-            // Something else when wrong
-        }
+        console.log(error)
+        console.log("Please restart the program")
     });
 

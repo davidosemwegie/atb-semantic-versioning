@@ -1,4 +1,6 @@
 /**
+ * Author: David Osemwegie
+ * Date: October 26th 2020
  * @function validateNumber() - will validate that the number is greater than 0 and has no leading zeros
  * @param {string} x - Part of the semver number
  *

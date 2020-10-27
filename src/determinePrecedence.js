@@ -22,9 +22,6 @@ const determinePrecedence = (a, b) => {
     const _a = processInput(a)
     const _b = processInput(b)
 
-    /**
-     * This for loop checks the index of the numbers
-     */
     for (let i = 0; i < 3; i++) {
         if (_a[i] > _b[i]) {
             return 1
