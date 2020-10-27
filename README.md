@@ -4,6 +4,16 @@ A semantic version number or semver is a version number used to label different 
 
 ---
 
+## Goal
+The goal of this was to create a function called determinePrecedence that takes two valid semantic versions and returns a boolean. The boolean should be true (1) if the first semver provided to the function has a higher precedence than the second semver provided, according to the rules of precedence. 
+
+**The code for the determinePrecedence function is located at 'src/determinePrecedence'**
+
+### Responses
+        $ 1 - true (first number > second number)
+        $ 0 - false (first number < second number)
+        $ -1 - same numbers
+
 ## Requirements
 
 For development, you will only need Node.js and a node global package, Yarn or NPM, installed in your environment.
@@ -46,8 +56,15 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
 ## Running the project
 
- $ npm start
+        $ npm start
+
+The program is interactive, so it will ask you the following questions and print out the appropriate response based on the user's input: 
+
+        $ ? What what is the first semantic number you want to compare ? 1.1.1
+        $ ? What what is the second semantic number you want to compare ? 2.2.2
+        $ Response Code:  0
+        $ 2.2.2 takes precedent over 1.1.1
 
 ## Running Test - 24 different test cases
 
- $ npm test
+        $ npm test

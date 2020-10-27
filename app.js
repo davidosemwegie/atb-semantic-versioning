@@ -15,12 +15,12 @@ inquirer
         {
             input: "input",
             name: "first_number",
-            message: "What what is the first semantic number you want to compare"
+            message: "What what is the first semantic number you want to compare?"
         },
         {
             input: "input",
             name: "second_number",
-            message: "What what is the second semantic number you want to compare"
+            message: "What what is the second semantic number you want to compare?"
         },
     ])
     .then(answers => {
@@ -35,7 +35,7 @@ inquirer
                 message = `${first_number} takes precedent over ${second_number}`
                 break
             case 0:
-                message = `${second_number} takes precedent over ${first_number}`
+                message = `${first_number} does not take precedent over ${second_number}`
                 break
             case -1:
                 message = `Both numbers are the same. There is no precedent.`
