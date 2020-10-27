@@ -12,6 +12,9 @@ const { processInput } = require('./src/processInput')
  * @param {string} b - The second semver number
  * 
  * @returns {boolean}
+ *  - 1: true 
+ *  - 0: false
+ *  - 1: same number
  */
 
 const determinePrecedence = (a, b) => {
