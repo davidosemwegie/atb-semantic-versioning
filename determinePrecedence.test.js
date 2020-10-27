@@ -1,5 +1,6 @@
-const { determinePrecedence } = require('./main')
+const { determinePrecedence } = require('./determinePrecedence')
 
+//Sample Numbers
 const valid_high = '1.2.4'
 const valid_low = '0.0.6'
 const valid_with_hyphen_low = '1.4.9-beta'
