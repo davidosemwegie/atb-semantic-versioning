@@ -1,39 +1,10 @@
 /**
- * @function validateNumber() - will validate that the number is greater than 0 and has no leading zeros
- * @param {string} x - Part of the semver number
- *
- * @returns {integer}
+ * Author: David Osemwegie
+ * Date: October 26th 2020
  */
 
-const validateNumber = (x) => {
-    //Check if number has leading 0
-    const _x = x.split("")
-    if (_x.length > 1 && _x[0] === "0") {
-        throw new Error("Input cannot contain leading zeros.")
-    }
-
-    if (x < 0) {
-        throw new Error("Input cannot contain an integer less than 0.")
-    }
-
-    return parseInt(x)
-}
-
-/**
- * @function processInput() - will convert the string semver number into an array of integer
- * @param {string} x - Semver number
- *
- * @returns {array}
- */
-
-const processInput = (x) => {
-    const _x = x.split(".").map(value => validateNumber(value))
-
-    if (_x.length !== 3) {
-        throw new Error("Incorrect Format. Input must be 'X.Y.Z'")
-    }
-    return _x
-}
+//Imports
+const { processInput } = require('./src/processInput')
 
 /**
  * @function determinePrecedence() - will return true if the first semver provided to the function has a higher precedence than the second semver provided.
