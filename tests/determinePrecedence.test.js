@@ -1,4 +1,4 @@
-const { determinePrecedence } = require('./determinePrecedence')
+const { determinePrecedence } = require('../src/determinePrecedence')
 
 //Sample Numbers
 const valid_high = '1.2.4'

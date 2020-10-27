@@ -4,7 +4,7 @@
  */
 
 //Imports
-const { processInput } = require('./src/processInput')
+const { processInput } = require('./processInput')
 
 /**
  * @function determinePrecedence() - will return true if the first semver provided to the function has a higher precedence than the second semver provided.
