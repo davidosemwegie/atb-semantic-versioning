@@ -10,9 +10,9 @@ The goal of this was to create a function called determinePrecedence that takes 
 **The code for the determinePrecedence function is located at 'src/determinePrecedence'**
 
 ### Responses
-        $ 1 - true (first number > second number)
-        $ 0 - false (first number < second number)
-        $ -1 - same numbers
+        1 - true (first number > second number)
+        0 - false (first number < second number)
+        -1 - same numbers
 
 ## Requirements
 
